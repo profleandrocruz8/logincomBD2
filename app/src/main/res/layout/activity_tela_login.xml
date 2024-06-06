@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/background_gradient"
+        android:gravity="center">
+
+        <!-- Label para Login -->
+        <TextView
+            android:id="@+id/CampoLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/convergence"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Caixa de texto para Login -->
+        <EditText
+            android:id="@+id/TextLogin"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/edit_text"
+            android:fontFamily="@font/convergence"
+            android:hint="Login"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <!-- Label para Senha -->
+        <TextView
+            android:id="@+id/labelSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/convergence"
+            android:text="Senha"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Caixa de texto para Senha -->
+        <EditText
+            android:id="@+id/textSenha"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:drawable/edit_text"
+            android:fontFamily="@font/convergence"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <!-- Botão de Acessar com fundo azul -->
+        <Button
+            android:id="@+id/buttonAcessar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#01010B"
+            android:backgroundTintMode="add"
+            android:fontFamily="@font/convergence"
+            android:onClick="validarAutenticação"
+            android:padding="10dp"
+            android:text="Acessar"
+            android:textColor="#FFFFFF" /> <!-- Cor azul hexadecimal -->
+
+        <!-- Botão de Cadastrar com fundo azul -->
+        <Button
+            android:id="@+id/buttonCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0000FF"
+            android:fontFamily="@font/convergence"
+            android:onClick="TelaLogin"
+            android:padding="10dp"
+            android:text="Cadastrar"
+            android:textColor="#FFFFFF" /> <!-- Cor azul hexadecimal -->
+
+    </LinearLayout>
+</FrameLayout>

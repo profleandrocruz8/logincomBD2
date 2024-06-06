@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "560654970578",
+    "project_id": "projetobdlogin",
+    "storage_bucket": "projetobdlogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560654970578:android:289dd797f72f149eb0870b",
+        "android_client_info": {
+          "package_name": "com.example.logincombd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkl4GjJUTepaPZI5ZIE_j5rb64O-aw-6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

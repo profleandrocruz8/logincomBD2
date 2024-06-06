@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/leo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Caixa de texto para Nome -->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+        <EditText
+            android:id="@+id/editTextNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/edit_text"
+            android:fontFamily="@font/convergence"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="#B80606" />
+
+        <!-- Caixa de texto para E-mail -->
+        <EditText
+            android:id="@+id/TextLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/edit_text"
+            android:fontFamily="@font/convergence"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="#B80606" />
+
+
+        <!-- Caixa de texto para Senha -->
+        <EditText
+            android:id="@+id/textSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@android:drawable/edit_text"
+            android:fontFamily="@font/convergence"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#B80606" />
+
+
+        <!-- Botão de Cadastrar com fundo preto e gradiente vermelho -->
+        <Button
+            android:id="@+id/buttonCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_gradient"
+            android:fontFamily="@font/convergence"
+            android:onClick="validarCampos"
+            android:padding="10dp"
+            android:text="Cadastrar"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</FrameLayout>
